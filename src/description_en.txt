@@ -1,0 +1,8 @@
+This is a 3x3x3 Hydrogen Tank for Small Ships.
+[list]
+[*]uses the Oxygen Tank Model
+[*]created ins stable but should work also in dev
+[*]capacity: 50.000
+[/list]
+
+// I would love to have a model looking like the vanilla tank. But I have no ide how to 3D.

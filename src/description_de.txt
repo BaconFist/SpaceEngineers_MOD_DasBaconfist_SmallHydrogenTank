@@ -1,0 +1,9 @@
+Ein 3x3x3 großer Wasserstoff-Tank für kleine Schiffe
+
+[list]
+[*]Verwendet das Model vom kleinen Oxygen-Tank
+[*]wurde in stable erstellt, sollte aber auch in der dev feunktionieren
+[*]kapazität: 50.000
+[/list]
+
+// Eine kleineres Modell vom Vanilla Tank wär super. Dummerwesise hab ich kein plan von dem 3D  zeug.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>DasBaconfist_SmallHydrogenTank</SubtypeId>
+      </Id>
+      <DisplayName>Bacon's Small Hydrogen Tank</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\OxygenTankSmall.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Public>true</Public>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\Cubes\Small\OxygenStorage.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SmallTube" Count="10" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Computer" Count="3" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Left" StartX="0" StartY="1" EndX="3" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="1" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0.6" EndX="1.1" EndY="1.3" />
+        <MountPoint Side="Top" StartX="1.9" StartY="0.6" EndX="3" EndY="1.3" />
+        <MountPoint Side="Top" StartX="0" StartY="2.4" EndX="3" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1.7" EndX="1.1" EndY="2.4" />
+        <MountPoint Side="Bottom" StartX="1.9" StartY="1.7" EndX="3" EndY="2.4" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="0.6" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\OxygenStorageConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\OxygenStorageConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>DasBaconfist_SmallHydrogenTank</BlockPairName>
+      <Center x="1" y="1" z="1" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>13</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <Capacity>50000</Capacity>
+      <InventoryMaxVolume>4</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+	  <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Hydrogen</SubtypeId>
+      </StoredGasId>
+      <BlueprintClasses>
+        <Class>HydrogenBottles</Class>
+      </BlueprintClasses>
+      <BuildTimeSeconds>13</BuildTimeSeconds>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+    </Definition>
+  </CubeBlocks>
+  <BlockPositions>
+      <BlockPosition>
+      <Name>DasBaconfist_SmallHydrogenTank</Name>
+      <Position>
+        <X>5</X>
+        <Y>13</Y>
+      </Position>
+    </BlockPosition>
+ </BlockPositions>
+ 
+</Definitions>
